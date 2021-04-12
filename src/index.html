@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__conteiner">
+          <div class="header__logo">
+            <img
+              src="img/Logo-Alta-Roma-белый-горизонтальный-min.png"
+              alt="Логотип"
+            />
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">ГЛАВНАЯ</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">КАТАЛОГ</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">ПОДОБРАТЬ РЕШЕНИЕ</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">ДИСТРИБЬЮТОРЫ</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__link" href="#">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <div id="mySidenav" class="sidenav">
+            <a href="" class="closebtn">×</a>
+            <a href="#" class="burger__link">ГЛАВНАЯ</a>
+            <a href="#" class="burger__link">КАТАЛОГ</a>
+            <a href="#" class="burger__link">ПОДОБРАТЬ РЕШЕНИЕ</a>
+            <a href="#" class="burger__link">ДИСТРИБЬЮТОРЫ</a>
+            <a href="#" class="burger__link">О компании</a>
+          </div>
+          <div id="main">
+            <span class="burger__list" style="font-size: 30px; cursor: pointer"
+              >☰ МЕНЮ</span
+            >
+          </div>
+          <div class="header__contakt">
+            <span>8 800 555 07 01</span>
+            <a id="myBtn" class="header__contakt-text">ОСТАВИТЬ ЗАЯВКУ</a>
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">×</span>
+                <div class="modal_conteiner">
+                  <div class="modal__title"><h2>ОставитЬ ЗАЯВКУ</h2></div>
+                  <div class="modal__text">
+                    <p>
+                      Пожалуйста, заполните форму, чтобы мы могли связаться с
+                      Вами для обсуждения деталей заявки.
+                    </p>
+                  </div>
+                  <div class="forma">
+                    <form
+                      action="send.php"
+                      method="POST"
+                      role="form"
+                      class="popup"
+                    >
+                      <div class="form__text">
+                        <input
+                          name="name"
+                          required
+                          placeholder="Имя*"
+                          value=""
+                          class="modal__input"
+                        />
+                        <input
+                          name="phone"
+                          required
+                          placeholder="Телефон*"
+                          value=""
+                          class="modal__input"
+                        />
+                        <input
+                          name="city"
+                          required
+                          placeholder="Город*"
+                          value=""
+                          class="modal__input"
+                        />
+                        <input
+                          name="email"
+                          required
+                          placeholder="E-mail*"
+                          value=""
+                          class="modal__input"
+                        />
+                      </div>
+
+                      <p class="modal__chek">
+                        * Поля, обязательные для заполнения
+                      </p>
+                      <div class="modal__container-text">
+                        <input
+                          id="ham"
+                          type="checkbox"
+                          name="toppings"
+                          value="ham"
+                        />
+                        <label for="ham" class="modal__lable">
+                          Согласие на
+                          <a href="#" class="modal__link"
+                            >обработку персональных данных</a
+                          ></label
+                        >
+                      </div>
+                      <input
+                        class="submit"
+                        type="submit"
+                        value="ОСТАВИТЬ ЗАЯВКУ"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="one">
+        <div class="one__nav">
+          <ul class="breadcrumb">
+            <li><a href="#">ГЛАВНАЯ</a></li>
+            <li>АРЕНДА КОФЕМАШИН</li>
+          </ul>
+        </div>
+      </section>
+      <section class="two">
+        <div class="two__conteiner">
+          <div class="two__conteiner-title">
+            <h1>Бесплатная аренда<br />профессиональных кофемашин</h1>
+          </div>
+          <div class="two__conteiner-info">
+            <div class="two__conteiner-block1">
+              <div class="two__conteiner-item">
+                <img src="img/chek.svg" alt="чек" />
+                <span>Новые кофемашины</span>
+              </div>
+              <div class="two__conteiner-item">
+                <img src="img/chek.svg" alt="чек" />
+                <span>Установим за 1 день</span>
+              </div>
+            </div>
+            <div class="two__conteiner-block2">
+              <div class="two__conteiner-item">
+                <img src="img/chek.svg" alt="чек" />
+                <span>Обслужим и доставим</span>
+              </div>
+
+              <div class="two__conteiner-item">
+                <img src="img/chek.svg" alt="чек" />
+                <span>Обучим персонал</span>
+              </div>
+            </div>
+          </div>
+          <div class="two_conteiner-button">
+            <button class="selection">
+              <span>Подобрать оборудование</span>
+            </button>
+            <button class="free"><span>Бесплатная дегустация</span></button>
+          </div>
+        </div>
+      </section>
+      <section class="three">
+        <div class="three__foto">
+          <div class="tree__item">
+            <img src="img/office-min.png" alt="В ОФИС" />
+          </div>
+          <div class="tree__item">
+            <img src="img/restaurant-min.png" alt="В РЕСТОРАН" />
+          </div>
+          <div class="tree__item">
+            <img src="img/hotel-min.png" alt="В ГОСТИНИЦУ" />
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
